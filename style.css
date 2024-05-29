@@ -40,6 +40,7 @@ body {
     background-color: var(--VeryDarkBlue);
     display: flex;
     width: 90%;
+    min-width: 800px;
     height: 100%;
     max-height: 75%;
     max-width: 1200px;
@@ -109,12 +110,19 @@ width: 20px;
 
 /*activity panels*/
 
-
+.icons{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    transform: translate(90px, -1px);
+    overflow: hidden;
+    
+}
 .activity-panel{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
     height: 100%;
     
     
@@ -141,6 +149,11 @@ width: 20px;
 .panels{
 height: 100%;
 display: flex;
+width: 30%;
+border-radius: 15px;
+overflow: hidden;
+
+
 
 }
 
@@ -171,8 +184,45 @@ display: flex;
 }
 
 .info-panels{
-background-color: var(--DesaturatedBlue);
-    width: 100%;
-  padding: 1em;
-  height: 70%;
+background-color: var(--DarkBlue);
+width: 100%;
+padding: 1.2em;
+align-self: flex-end;
+height: 80%;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+position: relative;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+overflow: hidden;
+
+
+}
+
+.info-panels:focus, .info-panels:hover{
+    background-color: var(--Blue);
+    cursor: pointer;
+
+}
+
+.info-panels h2{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.top-info-panels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.top-info-panels img{
+    height: 5px;
+    width: 20px;
+}
+.top-info-panels img:hover, .top-info-panels img:focus{
+    cursor: pointer;
 }
