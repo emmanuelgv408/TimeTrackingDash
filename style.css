@@ -29,37 +29,38 @@ body {
 
 .wrapper{
     height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 
-/*user panel*/
+
 
 .panel{
     background-color: var(--VeryDarkBlue);
     display: flex;
-    width:50%;
-    justify-content:space-between;
-    
+    width: 90%;
+    height: 65%;
     max-width: 1200px;
-   padding: 2em;
+    padding: 2em;
     gap: 3rem;
 }
 
+/*user panel*/
 .user-panel{
     background-color: var(--DarkBlue);
     border-radius:15px;
     width: 100%;
+    height: 100%;
     max-width: 280px;
+
   
 }
 
 .user-info{
     background-color: antiquewhite;
     width: 100%;
-    height: 65%;
+    height: 60%;
     padding: 2rem;
     background-color: var(--Blue);
     border-radius: 15px;
@@ -110,26 +111,31 @@ width: 20px;
 
 .activity-panel{
     display: flex;
-flex-direction: column;
-justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+    
+
+
 
 }
 
 .activity-top{
     display: flex;
-    height: 50%;
-    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 16em;
+   
 }
 
 .activity-bottom{
     display: flex;
-    height: 50%;
-    width: 100%;
- 
+    justify-content: space-around;
+
 }
 
 .panels{
-    
+    padding: 1em;
 }
 
 .work-panel{
