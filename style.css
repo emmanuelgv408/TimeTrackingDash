@@ -14,7 +14,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
+/* layout */
 *, *::after, *::after {
     margin: 0;
     padding: 0;
@@ -34,10 +34,15 @@ body {
     align-items: center;
 }
 
+
+/*user panel*/
+
 .panel{
     background-color: var(--VeryDarkBlue);
     display: flex;
-    width:80%;
+    width:50%;
+    justify-content:space-between;
+    
     max-width: 1200px;
    padding: 2em;
     gap: 3rem;
@@ -99,16 +104,15 @@ width: 20px;
 }
 
 
+
+/*activity panels*/
+
+
 .activity-panel{
     display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
 
-
-
-    
-    
 }
 
 .activity-top{
