@@ -226,3 +226,7 @@ overflow: hidden;
 .top-info-panels img:hover, .top-info-panels img:focus{
     cursor: pointer;
 }
+
+.last-week{
+    color: var(--PaleBlue);
+}
