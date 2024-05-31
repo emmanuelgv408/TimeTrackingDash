@@ -230,3 +230,12 @@ overflow: hidden;
 .last-week{
     color: var(--PaleBlue);
 }
+
+
+@media(max-width :680px) {
+
+    .panel{
+        flex-direction: column;
+    }
+    
+}
