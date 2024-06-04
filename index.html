@@ -4,15 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
-
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
@@ -25,20 +20,13 @@
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
-
   <div class="wrapper">
-
     <div class="panel">
-
       <div class="user-panel">
-
         <div class="user-info">
           <img src="/images/image-jeremy.png" alt="image-jeremy">
           <p>Report for</p>
@@ -49,145 +37,75 @@
           <button class="weekly-button">Weekly</button>
           <button class="monthly-button">Monthly</button>
         </div>
-
-
-
       </div>
-
-
-
-      
       <div class="activity-panel">
-    
         <div class="activity-top">
-          <section class=" work-panel panels">
-            <img src="/images/icon-work.svg " class="icons">
+          <section class="work-panel panels">
+            <img src="/images/icon-work.svg" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Work</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>32hrs</h2>
-              <p class="last-week">Last Week -36hrs</p>
+              <h2><span class="current-hours work-hours">32hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours work-last-week">36hrs</span></p>
             </div>
           </section>
-          <section class=" play-panel panels">
+          <section class="play-panel panels">
             <img src="/images/icon-play.svg" alt="" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Play</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>10hrs</h2>
-              <p class="last-week">Last Week -8hrs</p>
+              <h2><span class="current-hours play-hours">10hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours play-last-week">8hrs</span></p>
             </div>
           </section>
-          <section class=" study-panel panels">
+          <section class="study-panel panels">
             <img src="/images/icon-study.svg" alt="" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Study</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>4hrs</h2>
-              <p class="last-week">Last Week -7hrs</p>
+              <h2><span class="current-hours study-hours">4hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours study-last-week">7hrs</span></p>
             </div>
           </section>
         </div>
-
-
-
-
         <div class="activity-bottom">
-          <section class=" exercise-panel panels">
+          <section class="exercise-panel panels">
             <img src="/images/icon-exercise.svg" alt="" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Exercise</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>4hrs</h2>
-              <p class="last-week">Last Week -5hrs</p>
+              <h2><span class="current-hours exercise-hours">4hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours exercise-last-week">5hrs</span></p>
             </div>
           </section>
-          <section class=" social-panel panels">
+          <section class="social-panel panels">
             <img src="/images/icon-social.svg" alt="" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Social</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>5hrs</h2>
-              <p class="last-week">Last Week -10hrs</p>
+              <h2><span class="current-hours social-hours">5hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours social-last-week">10hrs</span></p>
             </div>
           </section>
-          <section class=" self-care-panel panels">
+          <section class="self-care-panel panels">
             <img src="/images/icon-self-care.svg" alt="" class="icons">
             <div class="info-panels">
               <div class="top-info-panels">
                 <p>Self Care</p><img src="/images/icon-ellipsis.svg" alt="">
               </div>
-              <h2>2hrs</h2>
-              <p class="last-week">Last Week -2hrs</p>
+              <h2><span class="current-hours self-care-hours">2hrs</span></h2>
+              <p class="last-week">Last Week - <span class="last-week-hours self-care-last-week">2hrs</span></p>
             </div>
           </section>
         </div>
       </div>
     </div>
-
-    </div>
-
-    <!--
-  Work
-  5hrs daily 
-  Previous - 7hrs  daily 
-  32hrs weekly 
-  Previous - 36hrs weekly 
-  103hrs  monthly 
-  Previous - 128hrsmonthly 
-
-  Play
-  1hr  daily
-  Previous - 2hrs daily 
-  10hrs  weekly
-  Previous - 8hrs weekly 
-  23hrs monthly 
-  Previous - 29hrs  monthly 
-
-  Study
-  0hrs  daily 
-  Previous - 1hr daily 
-  4hrs weekly 
-  Previous - 7hrs  weekly 
-  13hrs  monthly
-  Previous - 19hrs monthly 
-
-  Exercise
-  1hr daily 
-  Previous - 1hr  daily 
-  4hrs weekly 
-  Previous - 5hrs weekly 
-  11hrs monthly 
-  Previous - 18hrs  monthly 
-
-  Social
-  1hr daily 
-  Previous - 3hrs aily 
-  5hrs  weekly 
-  Previous - 10hrs  weekly
-  21hrs monthly 
-  Previous - 23hrs  monthly 
-
-  Self Care
-  0hrs daily
-  Previous - 1hr daily 
-  2hrs weekly 
-  Previous - 2hrs  weekly
-  7hrs  monthly 
-  Previous - 11hrs  monthly 
-
--->
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+  </div>
 </body>
 
 </html>
